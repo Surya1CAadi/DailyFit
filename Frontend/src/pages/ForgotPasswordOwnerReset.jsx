@@ -33,7 +33,7 @@ function ForgotPasswordUserReset() {
     setDisabled(true);
 
     const [err, res] = await to(
-      request.patch(`/user/forgotPassword/${token}`, formData),
+      request.patch(`/owner/forgotPassword/${token}`, formData),
     );
 
     if (err) {

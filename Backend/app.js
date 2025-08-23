@@ -6,7 +6,6 @@ const mongoSanitize = require("express-mongo-sanitize"); //sanitize the mongo in
 const xss = require("xss-clean"); //removes malicious code from input
 const cors = require("cors"); //prevents cors blockage
 const cookieParser = require("cookie-parser");
-const otherController = require("./controllers/otherController");
 const rateLimit = require('express-rate-limit')
 
 
