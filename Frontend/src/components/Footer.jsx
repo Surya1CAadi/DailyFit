@@ -4,7 +4,7 @@ import {
   AiFillYoutube,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
-import { GiPlasticDuck } from "react-icons/gi";
+import { GiPlasticDuck, GiStrongMan } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -14,9 +14,9 @@ const Footer = () => {
         <div className="md:flex md:justify-between ">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
-              <GiPlasticDuck size={30} className="mr-2" />
+              <GiStrongMan size={30} className="mr-2" />
               <span className="self-center  text-2xl font-semibold whitespace-nowrap dark:text-black">
-                <span className="hover:text-yellow-300">Duckling</span>{" "}
+                <span className="hover:text-yellow-300">Daily</span>{" "}
                 <span className="text-yellow-300">Fit</span>
               </span>
             </a>
@@ -46,7 +46,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            {/* <div>
               <h2 className="mb-6 text-sm font-semibold uppercase ">
                 Site map
               </h2>
@@ -79,7 +79,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <Link
               to="/owner/signup"
@@ -92,14 +92,14 @@ const Footer = () => {
         <hr className="my-6 border-gray-500 sm:mx-auto dark:border-gray-700 lg:my-8 border-t-2 border-dotted" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2024{" "}
+            © 2025{" "}
             <span className="hover:underline">
-              Duckling Fit
+              Daily Fit
             </span>
             {/*. All Rights Reserved.*/}
           </span>
           <div className="flex text-gray-400 list-none  space-x-5 px-36">
-            <li>
+            {/* <li>
               <a
                 href="https://www.youtube.com/channel/UCU5OddbssZGzeBqiOX1vs_w"
                 className="social-icon-link  w-8 bi-youtube"
@@ -107,11 +107,11 @@ const Footer = () => {
               >
                 <AiFillYoutube />
               </a>
-            </li>
+            </li> */}
 
             <li>
               <a
-                href="https://wa.me/+918295372047"
+                href="https://wa.me/+919369282776"
                 className="social-icon-link w-8 bi-whatsapp"
                 target="_blank"
               >
@@ -121,7 +121,8 @@ const Footer = () => {
 
             <li>
               <a
-                href="https://www.instagram.com/ducklingfit/?next=%2F"
+                href="https://www.instagram.com/addy__.24/?next=%2F"
+                
                 className="social-icon-link w-8 bi-instagram"
                 target="_blank"
               >

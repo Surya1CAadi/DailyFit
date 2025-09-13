@@ -22,7 +22,7 @@ const GymSignup = () => {
                   </a>
 
                   <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-                    Welcome to Duckling Fit
+                    Welcome to Daily Fit
                   </h2>
                 </div>
               </section>
@@ -39,7 +39,7 @@ const GymSignup = () => {
                     </a>
 
                     <h2 className="mt-6 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
-                      Welcome to Duckling Fit &nbsp;🐥
+                      Welcome to Daily Fit &nbsp;🐥
                     </h2>
                   </div>
                   <section className=" -mt-0 p-10 flex flex-wrap items-center justify-evenly">

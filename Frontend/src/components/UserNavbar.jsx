@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 import { Link, NavLink, useNavigate, useNavigation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { GiDuck, GiPlasticDuck } from "react-icons/gi";
+import { GiDuck, GiPlasticDuck,GiWeightLiftingUp ,GiStrongMan} from "react-icons/gi";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { logoutUser } from "../redux/apiCalls/userCalls.js";
 import { SiDuckdb } from "react-icons/si";
+import { FaRunning } from "react-icons/fa";
 
 const UserNavbar = () => {
   const user = useSelector((state) => state.user.user);
@@ -92,11 +93,11 @@ const UserNavbar = () => {
                       to="/"
                       className="flex relative items-center translate-x-full lg:translate-x-0"
                     >
-                      <GiPlasticDuck
+                      <GiStrongMan
                         size={30}
                         className="mr-2 opacity-100 hover:opacity-0"
                       />
-                      <GiDuck
+                      <FaRunning
                         size={30}
                         className="mr-2 bg-black absolute top-0 opacity-0 hover:opacity-100"
                       />

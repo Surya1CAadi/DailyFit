@@ -1,11 +1,11 @@
-import React, {useEffect} from "react";
-import {useSelector} from "react-redux";
-import {json, useLoaderData, useNavigate} from "react-router-dom";
-import {request} from "../requestMethods.js";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { json, useLoaderData, useNavigate } from "react-router-dom";
+import { request } from "../requestMethods.js";
 import UserBooking from "../components/UserBooking.jsx";
-import {protect} from "../helperFunctions/protect.js";
+import { protect } from "../helperFunctions/protect.js";
 import UpdatePasswordUser from "../components/UpdatePasswordUser.jsx";
-import {AiTwotoneInfoCircle} from "react-icons/ai";
+import { AiTwotoneInfoCircle } from "react-icons/ai";
 import ManageCredit from "../components/ManageCredit.jsx";
 
 export async function loadBookings() {
@@ -14,7 +14,7 @@ export async function loadBookings() {
     } catch (e) {
         throw json({
             message: e.response.data.message,
-        }, {status: e.response.status},);
+        }, { status: e.response.status },);
     }
 }
 
@@ -38,16 +38,16 @@ function ProfilePage() {
                     <div className="flex items-center gap-2">
                         <span className="font-medium text-lg">Credit: </span>
                         <span className="font-bold text-green-700">
-                  ₹{useLoaderData()?.data?.data?.credit}
-                </span>
-                        <AiTwotoneInfoCircle className="relative bottom-1"/>
+                            ₹{useLoaderData()?.data?.data?.credit}
+                        </span>
+                        {/* <AiTwotoneInfoCircle className="relative bottom-1" />
 
                         <div onClick={() => document.getElementById('manageCreditModel').showModal()}
-                             className="text-blue-400 underline cursor-pointer">
+                            className="text-blue-400 underline cursor-pointer">
                             Manage credit
                         </div>
 
-                        <ManageCredit id="manageCreditModel"/>
+                        <ManageCredit id="manageCreditModel" /> */}
                     </div>
                 </div>
                 <div className="text-center md:text-right text-stone-500">
@@ -60,7 +60,7 @@ function ProfilePage() {
                     >
                         Reset Password
                     </div>
-                    <UpdatePasswordUser id="psModel"/>
+                    <UpdatePasswordUser id="psModel" />
                 </div>
             </div>
             <div className="py-5 *:max-w-[1400px] bg-base-200 flex flex-col items-center w-screen">
@@ -70,7 +70,7 @@ function ProfilePage() {
                 {/*///My orders listing from here///*/}
                 <div className="w-full flex flex-col items-center">
                     {bookings
-                        .map((booking) => (<UserBooking key={booking.id} booking={booking}/>))
+                        .map((booking) => (<UserBooking key={booking.id} booking={booking} />))
                         .reverse()}
                 </div>
             </div>
