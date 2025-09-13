@@ -88,10 +88,10 @@ const ContactUsPage = () => {
                       Our Address
                     </h3>
                     <p className="text-gray-600 dark:text-slate-400">
-                      VPO BASANA TEH-KALANAUR
+                      MNNIT ALLAHABAD
                     </p>
                     <p className="text-gray-600 dark:text-slate-400">
-                      ROHTAK HARYANA 124022
+                      PRAYAGRAJ UTTAR PRADESH 211004 INDIA
                     </p>
                   </div>
                 </li>
@@ -119,13 +119,13 @@ const ContactUsPage = () => {
                       Contact
                     </h3>
                     <p className="text-gray-600 dark:text-slate-400">
-                      Mobile: +91 8295372047
+                      Mobile: +91 7310282776
                     </p>
                     <a
                       href="mailto:ceo@ducklingfit.com"
                       className="text-gray-600 dark:text-slate-400"
                     >
-                      Mail: ceo@ducklingfit.com
+                      Mail: adityamaurya1319@gmail.com
                     </a>
                   </div>
                 </li>

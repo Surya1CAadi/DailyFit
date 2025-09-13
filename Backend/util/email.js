@@ -6,7 +6,7 @@ const sendEmail = async options => {
     const transporter = nodemailer.createTransport({
         host: process.env.EMAIL_HOST,
         port: process.env.EMAIL_PORT,
-        secure: false, auth: {
+        auth: {
             user: process.env.EMAIL_USERNAME,
             pass: process.env.EMAIL_PASSWORD,
         },
@@ -39,7 +39,7 @@ const sendContactEmail = async options => {
 
     //1.create a transporter=> a service that will send the email, node itself won't.
     const transporter = nodemailer.createTransport({
-        host: process.env.EMAIL_HOST_CONTACTUS, port: process.env.EMAIL_PORT_CONTACTUS, secure: false, auth: {
+        host: process.env.EMAIL_HOST_CONTACTUS, port: process.env.EMAIL_PORT_CONTACTUS,  auth: {
             user: process.env.EMAIL_USERNAME_CONTACTUS, pass: process.env.EMAIL_PASSWORD_CONTACTUS,
         },
     });
@@ -47,7 +47,7 @@ const sendContactEmail = async options => {
 
     //2.define email options
     const mailOptions = {
-        from: "jigyashusaini7@gmail.com", to: options.email, subject: options.subject, html: options.html
+        from: process.env.EMAIL_USERNAME_CONTACTUS, to: options.email, subject: options.subject, html: options.html
     }
 
 
