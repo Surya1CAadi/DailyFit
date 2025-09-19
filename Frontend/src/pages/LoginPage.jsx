@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { GiPlasticDuck } from "react-icons/gi";
+import { GiStrongMan } from "react-icons/gi";
+
 import { loginUser } from "../redux/apiCalls/userCalls.js";
 import { setLoginRedirect } from "../redux/auxiliarySlice.js";
 
@@ -54,11 +55,11 @@ const Login = () => {
             <div className="hidden lg:relative lg:block lg:p-12">
               <a className="block text-white" href="#">
                 <span className="sr-only">Home</span>
-                <GiPlasticDuck size={40} />
+                <GiStrongMan size={40} />
               </a>
 
               <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-                Welcome to Duckling Fit
+                Welcome to Daily Fit
               </h2>
             </div>
           </section>
@@ -68,7 +69,7 @@ const Login = () => {
               <div className="relative -mt-16 block lg:hidden">
                 <a className="inline-flex size-16 items-center justify-center rounded-full bg-white text-blue-600 sm:size-20">
                   <span className="sr-only">Home</span>
-                  <GiPlasticDuck size={40} />
+                  <GiStrongMan size={40} />
                 </a>
 
                 <h2 className="mt-6 text-2xl font-bold text-black sm:text-3xl md:text-4xl">

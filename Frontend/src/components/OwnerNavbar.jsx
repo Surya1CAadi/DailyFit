@@ -1,11 +1,13 @@
 import React, { Fragment } from "react";
 import { NavLink, useNavigate, useNavigation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { GiDuck, GiPlasticDuck } from "react-icons/gi";
+import {  GiStrongMan } from "react-icons/gi";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { SiDuckdb } from "react-icons/si";
 import { logoutOwner } from "../redux/apiCalls/ownerCalls.js";
 import UpdatePasswordOwner from "./UpdatePasswordOwner.jsx";
+import { FaRunning } from "react-icons/fa";
+
+
 
 const OwnerNavbar = () => {
   const owner = useSelector((state) => state.owner.owner);
@@ -99,11 +101,10 @@ const OwnerNavbar = () => {
                       to="/owner/checkin"
                       className="flex relative items-center"
                     >
-                      <GiPlasticDuck
-                        size={30}
+                      <GiStrongMan       size={30}
                         className="mr-2 opacity-100 hover:opacity-0"
                       />
-                      <GiDuck
+                      <FaRunning
                         size={30}
                         className="mr-2 bg-black absolute top-0 opacity-0 hover:opacity-100"
                       />
@@ -125,7 +126,7 @@ const OwnerNavbar = () => {
                           <Menu.Button className="relative flex p-1 rounded-full bg-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span className="absolute -inset-1.5" />
                             <span className="sr-only">Open owner menu</span>
-                            <SiDuckdb size={24} className="text-black" />
+                            <GiStrongMan size={24} className="text-black" />
                           </Menu.Button>
                         </div>
                         <Transition

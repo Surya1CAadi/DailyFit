@@ -1,5 +1,5 @@
 import React from "react";
-import { GiPlasticDuck } from "react-icons/gi";
+import { GiStrongMan } from "react-icons/gi";
 
 const GymSignup = () => {
   return (
@@ -18,7 +18,7 @@ const GymSignup = () => {
                 <div className="hidden lg:relative lg:block lg:p-12">
                   <a className="block text-white" href="#">
                     <span className="sr-only">Home</span>
-                    <GiPlasticDuck size={40} />
+                    <GiStrongMan size={40} />
                   </a>
 
                   <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
@@ -35,7 +35,7 @@ const GymSignup = () => {
                       href="#"
                     >
                       <span className="sr-only">Home</span>
-                      <GiPlasticDuck size={40} />
+                      <GiStrongMan size={40} />
                     </a>
 
                     <h2 className="mt-6 text-2xl font-bold text-black sm:text-3xl md:text-4xl">

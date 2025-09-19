@@ -75,7 +75,7 @@ const OwnerHomePage = () => {
             <div className="p-4 md:pl-10 text-center">
               <h2 className="text-xl md:text-3xl font-bold leading-tight text-black">
                 {/*<span className="font-extrabold text-gray-900  text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 font-hihi">*/}
-                {/*  Duckling Fit*/}
+                {/*  Daily Fit*/}
                 {/*</span>+*/}
                 <span className="font-extrabold text-xl md:text-3xl text-gray-900 text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-red-400 font-hihi">
                   {stats.name}

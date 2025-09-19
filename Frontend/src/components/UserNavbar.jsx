@@ -1,10 +1,9 @@
 import React, { Fragment } from "react";
 import { Link, NavLink, useNavigate, useNavigation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { GiDuck, GiPlasticDuck,GiWeightLiftingUp ,GiStrongMan} from "react-icons/gi";
+import {GiStrongMan} from "react-icons/gi";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { logoutUser } from "../redux/apiCalls/userCalls.js";
-import { SiDuckdb } from "react-icons/si";
 import { FaRunning } from "react-icons/fa";
 
 const UserNavbar = () => {
@@ -119,7 +118,7 @@ const UserNavbar = () => {
                           <Menu.Button className="relative flex p-1 rounded-full bg-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span className="absolute -inset-1.5" />
                             <span className="sr-only">Open user menu</span>
-                            <SiDuckdb size={24} className="text-black" />
+                            <GiStrongMan size={24} className="text-black" />
                           </Menu.Button>
                         </div>
                         <Transition

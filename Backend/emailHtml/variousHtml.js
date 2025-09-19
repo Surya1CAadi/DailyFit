@@ -171,15 +171,15 @@ exports.getPasswordResetHtml = (name,link) => {
         </head>
         <body>
             <div class="container">
-                <h1>Duckling Fit</h1>
+                <h1>Daily Fit</h1>
                 <p>Password Reset</p>
                 <p>Hello ${name},</p>
-                <p>You have requested to reset your password for your Duckling Fit account. Please click the link below to reset your password. This link is valid for 10 minutes:</p>
+                <p>You have requested to reset your password for your Daily Fit account. Please click the link below to reset your password. This link is valid for 10 minutes:</p>
                 <p style="text-align: center;"><a href=${link}>Reset Password</a></p>
                 <p>If you did not request this password reset, please ignore this email.</p>
                 <p>Please note that the password reset link is only valid for 10 minutes.</p>
                 <p>Thank you,</p>
-                <p>The Duckling Fit Team</p>
+                <p>The Daily Fit Team</p>
             </div>
         </body>
         </html>

@@ -47,7 +47,7 @@ function Pay({gym}) {
       key: import.meta.env.VITE_RAZ_KEY,
       amount: response.data.rate * 100,
       currency: "INR",
-      name: "Duckling Fit",
+      name: "Daily Fit",
       description: `Subscribing ${response.data.gym.name} for ${getIndianLocaleDate(response.data.requestedDate)}`,
       image: "https://www.ducklingfit.com/assets/logo-C3twdCVl.png",
       order_id: response.data.orderId,

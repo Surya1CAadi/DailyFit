@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {GiPlasticDuck} from "react-icons/gi";
+import {GiStrongMan} from "react-icons/gi";
 import {signup1_2} from "../redux/apiCalls/userCalls.js";
 import {useDispatch} from "react-redux";
 
@@ -37,11 +37,11 @@ const SignupUser = ({setPhase, formData, setFormData}) => {
                             <div className="hidden lg:relative lg:block lg:p-12">
                                 <div className="block text-white">
                                     <span className="sr-only">Home</span>
-                                    <GiPlasticDuck size={40}/>
+                                    <GiStrongMan size={40}/>
                                 </div>
 
                                 <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-                                    Welcome to Duckling Fit
+                                    Welcome to Daily Fit
                                 </h2>
                             </div>
                         </section>
@@ -54,11 +54,11 @@ const SignupUser = ({setPhase, formData, setFormData}) => {
                                         className="inline-flex size-16 items-center justify-center rounded-full bg-white text-blue-600 sm:size-20"
                                     >
                                         <span className="sr-only">Home</span>
-                                        <GiPlasticDuck size={40}/>
+                                        <GiStrongMan size={40}/>
                                     </div>
 
                                     <h2 className="mt-6 text-2xl font-bold text-black sm:text-3xl md:text-4xl">
-                                        Welcome to Duckling Fit &nbsp;🐥
+                                        Welcome to Daily Fit &nbsp;🐥
                                     </h2>
                                 </div>
                                 <section className=" -mt-0 p-10 pt-2 flex flex-wrap items-center justify-evenly">

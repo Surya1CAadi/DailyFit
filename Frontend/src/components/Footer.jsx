@@ -4,7 +4,7 @@ import {
   AiFillYoutube,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
-import { GiPlasticDuck, GiStrongMan } from "react-icons/gi";
+import {  GiStrongMan } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
