@@ -122,7 +122,7 @@ const ContactUsPage = () => {
                       Mobile: +91 7310282776
                     </p>
                     <a
-                      href="mailto:ceo@ducklingfit.com"
+                      href="mailto:adityamaurya1319@gmail.com"
                       className="text-gray-600 dark:text-slate-400"
                     >
                       Mail: adityamaurya1319@gmail.com

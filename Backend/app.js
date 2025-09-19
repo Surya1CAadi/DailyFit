@@ -17,7 +17,7 @@ app.use(helmet());
 app.set("trust proxy", 1);
 app.use(cors({
     credentials: true,
-    origin: process.env.NODE_ENV === "development" ? "http://localhost:5173" : "https://www.ducklingfit.com",
+    origin: process.env.NODE_ENV === "development" ? "http://localhost:5173" :  "http://localhost:5173",
 }));
 
 // read data from the body into req.body, max is 10kb.

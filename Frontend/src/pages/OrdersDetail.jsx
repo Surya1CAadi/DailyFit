@@ -285,10 +285,10 @@ const OrdersDetail = () => {
                       </div>
                     </div>
                     <a
-                      href="mailto:ceo@ducklingfit.com"
+                      href="mailto:adityamaurya1319@gmail.com"
                       className="text-lg  leading-6 dark:text-white text-gray-800"
                     >
-                      ceo@ducklingfit.com
+                      adityamaurya1319@gmail.com
                     </a>
                   </div>
                   <div className="w-full flex justify-center items-center">

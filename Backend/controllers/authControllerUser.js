@@ -70,7 +70,7 @@ exports.signup = catchAsync(async (req, res, next) => {
     });
 
     await sendEmail({
-        email: newUser.email, subject: "Welcome to DucklingFit.com! Please verify your email", html: getHtmlForOtp(otp)
+        email: newUser.email, subject: "Welcome to DailyFit.com! Please verify your email", html: getHtmlForOtp(otp)
     });
 
     res.status(200).json({
@@ -101,7 +101,7 @@ exports.verifyEmail = catchAsync(async (req, res, next) => {
         updatedUser = {...updatedUser}._doc;
         createSendToken(updatedUser, 201, res);
         sendEmail({
-            email: user.email, subject: "Welcome to DucklingFit.com!", html: getHtmlForWelcome(user.name)
+            email: user.email, subject: "Welcome to DailyFit.com!", html: getHtmlForWelcome(user.name)
         });
         return;
     }

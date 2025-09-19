@@ -71,7 +71,7 @@ exports.getHtmlForWelcome = (name) => {
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Welcome to DuckingFit</title>
+            <title>Welcome to DailyFit</title>
             <style>
                 body {
                     font-family: 'Arial', sans-serif;
@@ -111,7 +111,7 @@ exports.getHtmlForWelcome = (name) => {
         </head>
         <body>
             <div class="container">
-                <h2>Welcome to <a href="https://www.ducklingfit.com" target="_blank">DuckingFit</a></h2>
+                <h2>Welcome to <a href="https://www.ducklingfit.com" target="_blank">DailyFit</a></h2>
                 <p>Hey there, <b>${name}</b></p>
                 <p>Welcome to ducklingfit.com, We are here to revolutionize your fitness accessibility and flexibility.</p>
                 <ul>
